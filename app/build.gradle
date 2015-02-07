@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 21
+  buildToolsVersion "21.1.2"
+
+  defaultConfig {
+    applicationId "au.id.rlac.plainwall"
+    minSdkVersion 15
+    targetSdkVersion 21
+    versionCode 1
+    versionName "1.0"
+  }
+
+  signingConfigs {
+    release {
+      if (rootProject.file('keystore.properties').exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(rootProject.file('keystore.properties')))
+
+        storeFile = file(props['storeFile'])
+        storePassword = props['storePassword']
+        keyAlias = props['keyAlias']
+        keyPassword = props['keyPassword']
+      }
+    }
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      signingConfig signingConfigs.release
+    }
+  }
+}
+
+dependencies {
+}

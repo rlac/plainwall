@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.id.rlac.plainwall">
+
+  <application
+      android:allowBackup="true"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher">
+
+    <service
+        android:name="au.id.rlac.plainwall.ColorWallpaperService"
+        android:exported="true"
+        android:permission="android.permission.BIND_WALLPAPER">
+
+      <intent-filter>
+        <action android:name="android.service.wallpaper.WallpaperService"/>
+      </intent-filter>
+
+      <meta-data
+          android:name="android.service.wallpaper"
+          android:resource="@xml/wallpaper"/>
+    </service>
+
+    <activity
+        android:name="au.id.rlac.plainwall.SettingsActivity"
+        android:label="Color Wall Settings"
+        android:exported="true"
+        android:theme="@style/SettingsTheme"/>
+
+  </application>
+
+</manifest>
