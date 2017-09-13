@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <dimen name="text_size_title">20sp</dimen>
+  <dimen name="vertical_seekbar_padding">8dp</dimen>
+  <dimen name="horizontal_padding">16dp</dimen>
+  <dimen name="vertical_padding">16dp</dimen>
   <dimen name="color_swatch_large">64dip</dimen>
   <dimen name="color_swatch_small">48dip</dimen>
   <dimen name="color_swatch_margins_large">8dip</dimen>

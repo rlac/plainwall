@@ -2,14 +2,14 @@ Plain Wallpaper
 ===============
 
 A lightweight and simple live wallpaper for Android that allows you to set a plain solid color as
-your home screen background. The color selections are based on the Material Design color palette.
+your home screen background.
 
 Available on [Google Play](http://play.google.com/store/apps/details?id=au.id.rlac.plainwall).
 
 License
 -------
 
-    Copyright (C) 2015 Robert Carr
+    Copyright (C) 2015, 2017 Robert Carr
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

@@ -3,4 +3,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:thumbnail="@drawable/thumbnail_256"
     android:description="@string/app_name"
-    android:settingsActivity="au.id.rlac.plainwall.SettingsActivity"/>
+    android:settingsActivity="au.id.rlac.plainwall.ui.PlainWallpaperActivity$SettingsActivity"/>

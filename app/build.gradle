@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 21
-  buildToolsVersion "21.1.2"
+  compileSdkVersion 26
+  buildToolsVersion "26.0.2"
 
   defaultConfig {
     applicationId "au.id.rlac.plainwall"
     minSdkVersion 15
-    targetSdkVersion 21
-    versionCode 1
-    versionName "1.0"
+    targetSdkVersion 26
+    versionCode 1709291
+    versionName "2.0"
+    vectorDrawables.generatedDensities = ['mdpi']
   }
 
   signingConfigs {
